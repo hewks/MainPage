@@ -1,0 +1,483 @@
+/* 
+Creado por CtrlProgrammer
+Derechos de autor Hewks.net
+Copyright (C) Hewks.net
+Web development text
+*/
+.web-development-text {
+	background: rgb(255, 255, 255);
+	border-top: 5px solid white;
+	border-bottom: 5px solid white;
+	color: black;
+	background-attachment: fixed;
+	background-blend-mode: darken;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.web-development-text>.overflow-content {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 25px 0;
+	background: rgba(253, 253, 253, 0.534);
+}
+
+.web-development-text>.overflow-content>.text-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	width: 95%;
+	max-width: 1100px;
+	padding: 25px 0;
+	flex-direction: column;
+	margin: 0 auto;
+	overflow: hidden;
+	overflow-wrap: unset;
+}
+
+.web-development-text p {
+	font-size: 16px;
+	text-align: justify;
+	line-height: 16px;
+	color: rgb(36, 36, 36);
+}
+
+.web-development-text .text-container>.ask-title {
+	font-size: 26px;
+	color: rgb(36, 36, 36);
+	padding-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+	z-index: 100;
+}
+
+.web-development-text .text-container>.ask-subtitle {
+	font-size: 22px;
+	text-align: left;
+	color: rgb(36, 36, 36);
+	padding-bottom: 10px;
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	z-index: 100;
+}
+
+.web-development-text .text-container>.ask-description {
+	font-size: 16px;
+	text-align: justify;
+	color: rgb(36, 36, 36);
+	padding-bottom: 15px;
+	line-height: 16px;
+	z-index: 100;
+}
+
+.web-development-text .text-container>button {
+	width: 100%;
+	max-width: 550px;
+	background: transparent;
+	border: 2px solid rgba(58, 58, 58, 0.671);
+	margin: 0 auto;
+	display: block;
+	color: rgb(36, 36, 36);
+	padding: 10px 0;
+	transition: all 0.3s ease;
+}
+
+.web-development-text .text-container>button:hover {
+	background: rgba(136, 136, 136, 0.336);
+	color: rgb(39, 39, 39);
+}
+
+.text-container .icon-an {
+	color: rgba(128, 128, 128, 0.13);
+	z-index: 10;
+	visibility: hidden;
+}
+
+.text-container .icon-an.icon-1 {
+	position: absolute;
+	top: 30px;
+	left: 25px;
+	font-size: 85px;
+}
+
+.text-container .icon-an.icon-3 {
+	position: absolute;
+	top: 100px;
+	right: 25px;
+	font-size: 85px;
+}
+
+.text-container .icon-an.icon-4 {
+	position: absolute;
+	top: 170px;
+	left: 25px;
+	font-size: 85px;
+}
+
+.text-container .icon-an.icon-5 {
+	position: absolute;
+	top: 240px;
+	right: 25px;
+	font-size: 85px;
+}
+
+.text-container .icon-an.icon-6 {
+	position: absolute;
+	top: 310px;
+	left: 25px;
+	font-size: 85px;
+}
+
+.text-container .icon-an.icon-7 {
+	position: absolute;
+	top: 380px;
+	right: 25px;
+	font-size: 85px;
+}
+
+.text-container .icon-an.icon-8 {
+	position: absolute;
+	top: 450px;
+	left: 25px;
+	font-size: 85px;
+}
+
+.text-container .icon-an.icon-9 {
+	position: absolute;
+	top: 520px;
+	right: 25px;
+	font-size: 85px;
+}
+
+.text-container .icon-an.icon-10 {
+	position: absolute;
+	top: 590px;
+	left: 25px;
+	font-size: 85px;
+}
+
+.text-container .icon-an.icon-11 {
+	position: absolute;
+	top: 660px;
+	right: 25px;
+	font-size: 85px;
+}
+
+@media screen and (min-width: 440px) {
+	.text-container .icon-an.icon-1 {
+		position: absolute;
+		top: 30px;
+		left: 80px;
+		font-size: 100px;
+	}
+
+	.text-container .icon-an.icon-3 {
+		position: absolute;
+		top: 110px;
+		right: 80px;
+		font-size: 100px;
+	}
+
+	.text-container .icon-an.icon-4 {
+		position: absolute;
+		top: 190px;
+		left: 80px;
+		font-size: 100px;
+	}
+
+	.text-container .icon-an.icon-5 {
+		position: absolute;
+		top: 270px;
+		right: 80px;
+		font-size: 100px;
+	}
+
+	.text-container .icon-an.icon-6 {
+		position: absolute;
+		top: 350px;
+		left: 80px;
+		font-size: 100px;
+	}
+
+	.text-container .icon-an.icon-7 {
+		position: absolute;
+		top: 430px;
+		right: 80px;
+		font-size: 100px;
+	}
+
+	.text-container .icon-an.icon-8 {
+		position: absolute;
+		top: 510px;
+		left: 80px;
+		font-size: 100px;
+	}
+
+	.text-container .icon-an.icon-9 {
+		position: absolute;
+		top: 590px;
+		right: 80px;
+		font-size: 100px;
+	}
+
+	.text-container .icon-an.icon-10 {
+		position: absolute;
+		top: 670px;
+		left: 80px;
+		font-size: 100px;
+	}
+
+	.text-container .icon-an.icon-11 {
+		position: absolute;
+		top: 750px;
+		right: 80px;
+		font-size: 100px;
+	}
+}
+
+@media screen and (min-width: 567px) {
+	.web-development-text p {
+		font-size: 18px;
+		text-align: justify;
+		line-height: 20px;
+	}
+}
+
+@media screen and (min-width: 660px) {
+	.web-development-text p {
+		font-size: 20px;
+		text-align: justify;
+		line-height: 20px;
+		padding-bottom: 32px;
+	}
+
+	.web-development-text .text-container>.ask-title {
+		font-size: 32px;
+		padding-bottom: 25px;
+	}
+
+	.web-development-text .text-container>.ask-description {
+		font-size: 20px;
+		padding-bottom: 32px;
+		line-height: 20px;
+	}
+	.text-container .icon-an {
+		position: absolute;
+	}
+
+	.text-container .icon-an.icon-1 {
+		top: unset;
+		right: unset;
+		left: unset;
+		bottom: unset;
+		top: 40px;
+		right: 65px;
+		font-size: 55px;
+	}
+
+	.text-container .icon-an.icon-3 {
+		top: unset;
+		right: unset;
+		left: unset;
+		bottom: unset;
+		bottom: 100px;
+		right: 65px;
+		font-size: 80px;
+	}
+
+	.text-container .icon-an.icon-4 {
+		top: unset;
+		right: unset;
+		left: unset;
+		bottom: unset;
+		top: 160px;
+		right: 180px;
+		font-size: 90px;
+	}
+
+	.text-container .icon-an.icon-5 {
+		top: unset;
+		right: unset;
+		left: unset;
+		bottom: unset;
+		top: 100px;
+		right: 320px;
+		font-size: 55px;
+	}
+
+	.text-container .icon-an.icon-6 {
+		top: unset;
+		right: unset;
+		left: unset;
+		bottom: unset;
+		top: 100px;
+		left: 280px;
+		font-size: 80px;
+	}
+
+	.text-container .icon-an.icon-7 {
+		top: unset;
+		right: unset;
+		left: unset;
+		bottom: unset;
+		bottom: 150px;
+		left: 65px;
+		font-size: 80px;
+	}
+
+	.text-container .icon-an.icon-8 {
+		top: unset;
+		right: unset;
+		left: unset;
+		bottom: unset;
+		bottom: 220px;
+		left: 220px;
+		font-size: 80px;
+	}
+
+	.text-container .icon-an.icon-9 {
+		top: unset;
+		right: unset;
+		left: unset;
+		bottom: unset;
+		top: calc(50% - 185px);
+		left: 0;
+		font-size: 80px;
+	}
+
+	.text-container .icon-an.icon-10 {
+		top: unset;
+		right: unset;
+		left: unset;
+		bottom: unset;
+		top: 250px;
+		left: calc(50% - 120px);
+		font-size: 100px;
+	}
+
+	.text-container .icon-an.icon-11 {
+		top: unset;
+		right: unset;
+		left: unset;
+		bottom: unset;
+		top: calc(60%);
+		left: calc(50% - 100);
+		font-size: 90px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+
+	.text-container .icon-an {
+		position: absolute;
+	}
+
+	.text-container .icon-an.icon-1 {
+
+		top: unset;
+		right: unset;
+		left: unset;
+		bottom: unset;
+		top: 40px;
+		right: 65px;
+		font-size: 85px;
+	}
+
+	.text-container .icon-an.icon-3 {
+		top: unset;
+		right: unset;
+		left: unset;
+		bottom: unset;
+		bottom: 100px;
+		right: 65px;
+		font-size: 220px;
+	}
+
+	.text-container .icon-an.icon-4 {
+		top: unset;
+		right: unset;
+		left: unset;
+		bottom: unset;
+		top: 160px;
+		right: 180px;
+		font-size: 240px;
+	}
+
+	.text-container .icon-an.icon-5 {
+		top: unset;
+		right: unset;
+		left: unset;
+		bottom: unset;
+		top: 100px;
+		right: 320px;
+		font-size: 85px;
+	}
+
+	.text-container .icon-an.icon-6 {
+		top: unset;
+		right: unset;
+		left: unset;
+		bottom: unset;
+		top: 100px;
+		left: 280px;
+		font-size: 125px;
+	}
+
+	.text-container .icon-an.icon-7 {
+		top: unset;
+		right: unset;
+		left: unset;
+		bottom: unset;
+		bottom: 150px;
+		left: 65px;
+		font-size: 125px;
+	}
+
+	.text-container .icon-an.icon-8 {
+		top: unset;
+		right: unset;
+		left: unset;
+		bottom: unset;
+		bottom: 220px;
+		left: 220px;
+		font-size: 125px;
+	}
+
+	.text-container .icon-an.icon-9 {
+		top: unset;
+		right: unset;
+		left: unset;
+		bottom: unset;
+		top: calc(50% - 185px);
+		left: 0;
+		font-size: 185px;
+	}
+
+	.text-container .icon-an.icon-10 {
+		top: unset;
+		right: unset;
+		left: unset;
+		bottom: unset;
+		top: calc(50% - 240px);
+		left: calc(50% - 120px);
+		font-size: 240px;
+	}
+
+	.text-container .icon-an.icon-11 {
+		top: unset;
+		right: unset;
+		left: unset;
+		bottom: unset;
+		top: calc(60%);
+		left: calc(50% - 100);
+		font-size: 180px;
+	}
+}

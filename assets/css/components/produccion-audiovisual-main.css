@@ -1,0 +1,62 @@
+/* 
+Creado por CtrlProgrammer
+Derechos de autor Hewks.net
+Copyright (C) Hewks.net
+produccion audiovisual main
+*/
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.audiovisual-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.audiovisual-div>.audiovisual-title {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.audiovisual-div>.audiovisual-description {
+    color: white;
+    font-size: 14px;
+    text-align: justify;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 770px) {
+    .audiovisual-div>.audiovisual-title {
+        font-size: 32px;
+    }
+    
+    .audiovisual-div>.audiovisual-description {
+        font-size: 18px;
+        max-width: 880px;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .audiovisual-div>.audiovisual-title {
+        font-size: 45px;
+    }
+    
+    .audiovisual-div>.audiovisual-description {
+        font-size: 25px;
+        max-width: 880px;
+    }
+}

@@ -1,0 +1,28 @@
+.soft-development .main-title {
+    margin-top: 180px;
+    margin-bottom: 85px;
+}
+
+.soft-development .sodvms-video {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: -10px;
+}
+
+.soft-development .sodvms-video video {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 990px;
+}
+
+@media screen and (min-width: 990px) {
+    .soft-development .main-title {
+        margin-top: 250px;
+        margin-bottom: 100px;
+    }
+    .soft-development .sodvms-video {
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}

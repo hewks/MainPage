@@ -1,0 +1,47 @@
+/* 
+Creado por CtrlProgrammer
+Derechos de autor Hewks.net
+Copyright (C) Hewks.net
+main title
+*/
+.main-page-title {
+	background: rgba(0, 0, 0, 0.363);
+}
+
+.main-page-title span {
+	display: block;
+}
+
+.main-page-title span.logo {
+	text-align: center;
+	font-size: 45px;
+	color: white;
+	font-weight: lighter;
+	font-family: 'Dancing Script', cursive;
+}
+
+.main-page-title .slogan {
+	width: 75%;
+	text-align: center;
+	font-size: 14px;
+	margin: 0 auto;
+	color: white;
+}
+
+@media screen and (min-width: 760px) {
+	.main-page-title .slogan {
+		font-size: 16px;
+	}
+
+	.main-page-title span.logo {
+		font-size: 125px;
+	}
+}
+
+
+@media screen and (min-width: 990px) {
+	.main-page-title .slogan {
+		font-size: 18px;
+	}
+
+}

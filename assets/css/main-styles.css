@@ -1,0 +1,663 @@
+/* 
+Creado por CtrlProgrammer
+Derechos de autor Hewks.net
+Copyright (C) Hewks.net
+main styles
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+a,
+a:hover,
+a:focus,
+button,
+button:hover,
+button:focus {
+	outline: none;
+}
+
+a {
+	color: grey;
+	text-decoration: none;
+	transition: all .3s ease;
+}
+
+a:hover {
+	color: rgb(46, 46, 46);
+}
+
+body {
+	background: grey;
+}
+
+/*/////////My Slider////////////*/
+
+.my-slider {
+	width: 100%;
+	height: 100%;
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+
+.my-slider>.my-slider-item {
+	height: 100%;
+	width: 100%;
+	display: none;
+}
+
+.my-slider>.my-slider-item.active {
+	display: block;
+}
+
+.my-slider-show {
+	opacity: 1;
+	transition: all 0.5s ease;
+}
+
+.my-slider-hide {
+	opacity: 0;
+	transition: all 0.5s ease;
+}
+
+.my-slider .my-slider-control {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 20px;
+	font-size: 20px;
+	color: white;
+	cursor: pointer;
+	position: absolute;
+	z-index: 200;
+	top: 0;
+	height: 100%;
+	transition: all 0.4s ease;
+}
+
+.my-slider .my-slider-control:hover {
+	color: rgb(197, 197, 197);
+}
+
+.my-slider .my-slider-next {
+	right: 0;
+}
+
+.my-slider .my-slider-prev {
+	left: 0;
+}
+
+/* //////////// Inputs //////////// */
+
+.my-form {
+	display: block;
+	position: relative;
+	max-width: 450px;
+	display: block;
+	margin: 0 auto;
+	padding: 5px 5px;
+}
+
+.my-form>.my-form-input-container {
+	padding-bottom: 7px;
+	border-bottom: 1px solid white;
+	background: transparent;
+	margin-bottom: 9px;
+	transition: all 0.5s ease;
+}
+
+.my-form>.my-form-input-container:hover {
+	border-bottom: 1px solid grey;
+}
+
+.my-form label {
+	color: white;
+	padding: 0;
+	margin: 0;
+	line-height: 14px;
+	font-size: 14px;
+}
+
+.my-form input.my-input {
+	background: transparent;
+	border: 0;
+	padding: 5px 7px;
+	color: white;
+	width: 100%;
+	font-size: 14px;
+}
+
+.my-form textarea.my-input {
+	background: transparent;
+	width: 100%;
+	height: 100px;
+	border: 0;
+	outline: none;
+	color: white;
+	font-size: 14px;
+}
+
+.my-form .my-form-submit-btn {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	border: 0;
+	border-radius: 4px;
+	background: rgba(214, 214, 214, 0.856);
+	color: rgb(49, 49, 49);
+	padding: 4px 0;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.my-form .my-form-submit-btn:hover {
+	background: rgba(255, 255, 255, 0.856);
+	color: rgb(24, 24, 24);
+}
+
+.my-form .my-form-add-text {
+	color: white;
+	font-size: 12px;
+	line-height: 12px;
+	text-align: center;
+}
+
+
+/* //////////// Overlays //////////// */
+
+.my-overlay {
+	background: transparent;
+	transition: all 0.4s ease;
+}
+
+.my-black-overlay:hover {
+	background: rgba(0, 0, 0, 0.521);
+}
+
+.my-blue-overlay:hover {
+	background: rgba(0, 2, 90, 0.315);
+}
+
+.my-red-overlay:hover {
+	background: rgba(80, 0, 0, 0.315);
+}
+
+.my-static-overlay.my-black-overlay {
+	background: rgba(0, 0, 0, 0.61);
+}
+
+.my-static-overlay.my-blue-overlay {
+	background: rgba(0, 2, 90, 0.315);
+}
+
+.my-static-overlay.my-red-overlay {
+	background: rgba(80, 0, 0, 0.315);
+}
+
+.my-static-overlay.my-grey-overlay {
+	background: rgba(110, 110, 110, 0.486);
+}
+
+
+/*///////////Backgrounds///////////*/
+
+.my-fixed-bg {
+	background-attachment: fixed;
+}
+
+/*//////////Containers/////////////*/
+
+.my-container-fluid {
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1100px;
+}
+
+.my-container-p {
+	padding: 0 10px;
+	max-width: 1100px;
+}
+
+.my-container-m {
+	margin: 0 10px;
+	max-width: 1100px;
+}
+
+/*////////My wrappers///////////*/
+.my-super-wrapper {
+	height: 80vh;
+	width: 100%;
+	min-height: 550px;
+}
+
+.my-medium-wrapper {
+	height: 50vh;
+	width: 100%;
+}
+
+
+.my-auto-wrapper {
+	height: auto;
+	width: 100%;
+}
+
+.my-cover-wrapper {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.my-flex-center-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.my-flex-center-colum-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.my-row-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/*/////////My sizes////////////*/
+
+.my-col-10,
+.my-col-20,
+.my-col-30,
+.my-col-40,
+.my-col-50,
+.my-col-60,
+.my-col-70,
+.my-col-80,
+.my-col-90,
+.my-col-100 {
+	width: 100%;
+}
+
+/*/////////Page loader///////////*/
+.total-page-loader {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	background: black;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	left: 0;
+	transition: all 0.4s ease;
+}
+
+.total-page-loader img {
+	width: calc(100vw - 40%);
+	max-width: 500px;
+}
+
+/*Top navigation*/
+.top-navigation {
+	position: fixed;
+	top: 0;
+	z-index: 900;
+	background: rgba(39, 39, 39, 0.644);
+	width: 100%;
+	height: 60px;
+	transition: all 0.6s ease;
+}
+
+.top-navigation.active-top-navigation {
+	background: rgb(31, 31, 31);
+}
+
+.top-navigation.active-top-navigation .nav-link {
+	color: rgb(240, 240, 240);
+	border: 0;
+}
+
+.top-navigation.active-top-navigation .navbar-brand {
+	color: rgb(240, 240, 240);
+}
+
+.top-navigation .dropdown-menu {
+	left: -50px;
+}
+
+.top-navigation .nav-link {
+	color: white;
+	font-family: 'Dancing Script', cursive;
+	border: 0;
+}
+
+.top-navigation .navbar-brand {
+	color: white;
+	font-family: 'Dancing Script', cursive;
+}
+
+.top-navigation .sidebar-toggler-btn {
+	background: transparent;
+	border: 0;
+	color: white;
+}
+
+/*Main sidebar*/
+.main-sidebar {
+	position: fixed;
+	top: 0;
+	left: -200px;
+	width: 200px;
+	background: rgb(44, 44, 44);
+	height: 100%;
+	z-index: 950;
+	transition: all 0.4s ease;
+	font-family: 'Dancing Script', cursive;
+}
+
+.main-sidebar.active-sidebar {
+	left: 0;
+}
+
+.main-sidebar .sidebar-top-logo {
+	color: white;
+	font-size: 22px;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	font-family: 'Dancing Script', cursive !important;
+}
+
+.main-sidebar .sidebar-top-logo span {
+	font-family: 'Dancing Script', cursive !important;
+}
+
+.main-sidebar .sidebar-top-logo::before {
+	content: "";
+	height: 1px;
+	position: absolute;
+	bottom: 1px;
+	left: 5%;
+	width: 90%;
+	background: white;
+}
+
+.main-sidebar .sidebar-block-title {
+	font-size: 17px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	color: white;
+	text-decoration: none;
+	transition: all 0.2s ease;
+	font-family: 'Dancing Script', cursive !important;
+}
+
+.main-sidebar .sidebar-block-title:hover {
+	color: rgb(226, 226, 226);
+	background: rgb(58, 58, 58);
+}
+
+.main-sidebar .sidebar-block-title::before {
+	content: "";
+	height: 1px;
+	position: absolute;
+	bottom: 1px;
+	left: 10%;
+	width: 80%;
+	background: white;
+	transition: all 0.4s ease;
+}
+
+.main-sidebar .sidebar-block-title:hover::before {
+	left: 5%;
+	width: 90%;
+	background: white;
+}
+
+.main-sidebar .sidebar-toggle-block {
+	background: rgb(44, 44, 44);
+	display: none;
+}
+
+
+.main-sidebar .sidebar-toggle-block li a {
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	color: white;
+	font-family: 'Dancing Script', cursive !important;
+}
+
+.main-sidebar .sidebar-toggle-block li a:hover {
+	text-decoration: none;
+	background: rgb(44, 44, 44);
+}
+
+.main-sidebar .sidebar-toggle-block.toggle-block-active {
+	display: block;
+}
+
+/*///////////////////Main styles///////////////*/
+
+.main-footer-wrap {
+	background: rgb(31, 31, 31);
+	padding: 25px 0px;
+	border-top: 4px solid white;
+}
+
+.main-footer-wrap>.container {
+	padding: 0 45px;
+}
+
+.main-footer-wrap .footer-title {
+	font-size: 22px;
+	color: white;
+	display: block;
+	text-align: left;
+	padding-bottom: 15px;
+}
+
+.main-footer-wrap ul li {
+	font-size: 13px;
+	color: white;
+	list-style: none;
+	text-align: left;
+	padding-bottom: 5px;
+	display: block;
+}
+
+/*///////////////////Responsive///////////////*/
+
+@media screen and (min-width: 660px) {
+
+	.my-col-10 {
+		width: 10%;
+	}
+
+	.my-col-20 {
+		width: 20%;
+	}
+
+	.my-col-30 {
+		width: 30%;
+	}
+
+	.my-col-40 {
+		width: 40%;
+	}
+
+	.my-col-50 {
+		width: 50%;
+	}
+
+	.my-col-50 {
+		width: 50%;
+	}
+
+	.my-col-60 {
+		width: 60%;
+	}
+
+	.my-col-70 {
+		width: 70%;
+	}
+
+	.my-col-80 {
+		width: 80%;
+	}
+
+	.my-col-90 {
+		width: 90%;
+	}
+
+	.my-col-100 {
+		width: 100%;
+	}
+
+	.main-footer-wrap>.container {
+		padding: 0 0px;
+	}
+
+}
+
+@media screen and (min-width: 776px) {
+	.my-slider .my-slider-control {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100px;
+		font-size: 40px;
+		color: white;
+		cursor: pointer;
+		position: absolute;
+		z-index: 200;
+		top: 0;
+		height: 100%;
+		transition: all 0.4s ease;
+	}
+}
+
+@media screen and (min-width: 990px) {
+	.top-navigation .sidebar-toggler-btn {
+		display: none;
+	}
+
+	.my-container-fluid {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.my-container-p {
+		padding: 0 85px;
+	}
+
+	.my-container-m {
+		margin: 0 85px;
+	}
+
+	.my-super-wrapper {
+		height: 100vh;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.my-container-fluid {
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1400px;
+	}
+
+	.my-container-p {
+		padding: 0 85px;
+		max-width: 1400px;
+		margin: 0 auto;
+	}
+
+	.my-container-m {
+		margin: 0 85px;
+		max-width: 1400px;
+		margin: 0 auto;
+	}
+
+	.top-navigation {
+		padding: 0 200px;
+	}
+}
+
+.loader {
+	width: 10em;
+	height: 10em;
+	font-size: 25px;
+	box-sizing: border-box;
+	border-top: 0.3em solid rgb(26, 26, 26);
+	border-radius: 50%;
+	position: relative;
+	animation: rotating 2s ease-in-out infinite;
+	--direction: 1;
+	display: flex;
+	align-content: center;
+	align-items: center;
+}
+
+.loader::before,
+.loader::after {
+	content: '';
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	border-radius: 50%;
+	box-sizing: border-box;
+	top: -0.2em;
+}
+
+.loader::before {
+	border-top: 0.3em solid rgb(16, 6, 75);
+	transform: rotate(120deg);
+}
+
+.loader::after {
+	border-top: 0.3em solid rgb(233, 233, 233);
+	transform: rotate(240deg);
+}
+
+.loader span {
+	color: white;
+	width: inherit;
+	height: inherit;
+	text-align: center;
+	line-height: 6em;
+	font-size: 45px;
+	animation: rotating 2s linear infinite;
+	--direction: -1;
+	font-family: 'Dancing Script', cursive;
+}
+
+@keyframes rotating {
+	50% {
+		transform: rotate(calc(180deg * var(--direction)));
+	}
+
+	100% {
+		transform: rotate(calc(360deg * var(--direction)));
+	}
+}

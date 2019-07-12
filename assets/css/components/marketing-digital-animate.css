@@ -1,0 +1,88 @@
+/* 
+Creado por CtrlProgrammer
+Derechos de autor Hewks.net
+Copyright (C) Hewks.net
+marketing-digital-section
+*/
+.marketing-digital-section {
+	background: white;
+	position: relative;
+	transition: all 1s ease;
+    flex-wrap: wrap;
+}
+
+.custom-color-background .an-text.madise-title {
+	color: rgb(252, 252, 252);
+	font-size: 26px;
+	text-align: center;
+	width: 100%;
+	display: block;
+	font-weight: bold;
+	font-style: italic;
+	z-index: 20;
+}
+
+.custom-color-background {
+	background: transparent;
+	transition: all 1s ease;
+	height: 200px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	overflow-wrap: unset;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.custom-color-background .an-icon {
+	position: absolute;
+	top: calc(50% - 120/2);
+	left: calc(50% - 120/2);
+	font-size: 120px;
+	color: rgba(228, 228, 228, 0.274);
+	z-index: 10;
+	visibility: hidden;
+	transition: all 0.3s ease;
+}
+
+.custom-color-background .an-text {
+    visibility: hidden;
+    width: 90%;
+    font-size: 16px;
+    margin: 0 auto;
+    display: block;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (min-width: 360px) {
+    .marketing-digital-section {
+		display: flex;
+		flex-direction: row;
+	}
+	.marketing-digital-section .custom-color-background {
+        flex: 0 0 50%;
+        max-width: 50%;
+	}
+}
+
+@media screen and (min-width: 572px) {
+    .marketing-digital-section {
+		display: flex;
+		flex-direction: row;
+	}
+	.marketing-digital-section .custom-color-background {
+        flex: 0 0 33.3333333%;
+        max-width: 33.3333333%;
+	}
+}
+
+
+@media screen and (min-width: 1200px) {
+    .marketing-digital-section .custom-color-background {
+        flex: 1;
+        max-width: unset;
+	}
+}

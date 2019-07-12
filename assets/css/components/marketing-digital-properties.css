@@ -1,0 +1,65 @@
+/* 
+Creado por CtrlProgrammer
+Derechos de autor Hewks.net
+Copyright (C) Hewks.net
+marketing-digital-properties
+*/
+
+.marketing-digital-properties {
+    background: rgb(27, 27, 27);
+    color: white;
+}
+
+.marketing-digital-properties>.mkd-property {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.marketing-digital-properties>.mkd-property>.mkd-property-image {
+    flex: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.marketing-digital-properties>.mkd-property>.mkd-property-text {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex: 50%;
+}
+
+.marketing-digital-properties>.mkd-property>.mkd-property-text>.mkd-text-container {
+    display: block;
+    text-align: justify;
+    font-size: 14px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.marketing-digital-properties>.mkd-property>.mkd-property-text>.mkd-text-container>h1{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+@media screen and (min-width: 660px) {
+    .marketing-digital-properties>.mkd-property{
+        flex-direction: row;
+        height: 60vh;
+        min-height: 400px;
+    }
+    .marketing-digital-properties>.mkd-property.mkd-property-reverse{
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .marketing-digital-properties>.mkd-property>.mkd-property-text>.mkd-text-container {
+        font-size: 18px;
+        max-width: 500px;
+    }
+}
+

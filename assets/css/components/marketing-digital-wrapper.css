@@ -1,0 +1,62 @@
+/* 
+Creado por CtrlProgrammer
+Derechos de autor Hewks.net
+Copyright (C) Hewks.net
+Marketing digital wrapper
+*/
+
+.marketing-digital-wrapper {
+	background: rgb(185, 185, 185);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.marketing-digital-wrapper .my-container-fluid {
+	position: relative;
+	height: 450px;
+}
+
+.marketing-digital-wrapper .madiwr-text {
+	width: 90%;
+}
+
+.marketing-digital-wrapper .madiwr-text p {
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+}
+
+.marketing-digital-wrapper .madiwr-text button {
+	border: 0;
+	outline: 0;
+	background: rgba(117, 117, 117, 0.43);
+	transition: all 0.3s ease;
+	color: white;
+	padding: 7px 10px;
+	cursor: pointer;
+}
+
+.marketing-digital-wrapper .madiwr-text button:hover {
+	background: grey;
+}
+
+@media screen and (min-width: 660px) {
+	.marketing-digital-wrapper .madiwr-text p {
+		font-size: 22px;
+	}
+}
+
+@media screen and (min-width: 990px) {
+	.marketing-digital-wrapper .madiwr-text p {
+		font-size: 26px;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.marketing-digital-wrapper .madiwr-text p {
+		font-size: 32px;
+	}
+}

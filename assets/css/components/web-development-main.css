@@ -1,0 +1,92 @@
+/* 
+Creado por CtrlProgrammer
+Derechos de autor Hewks.net
+Copyright (C) Hewks.net
+web development main
+*/
+
+.web-development-main {
+	text-align: center;
+}
+
+.web-development-main>.main-title {
+	padding: 15px 5px;
+	width: 95%;
+	margin: 0 auto;
+	position: relative;
+	max-width: 450px;
+}
+
+.web-development-main>.main-title>h4 {
+	margin-bottom: 15px;
+	color: rgb(245, 245, 245);
+	font-size: 25px;
+	font-weight: lighter;
+	text-align: left;
+}
+
+.web-development-main>.main-title>p {
+	margin-bottom: 15px;
+	color: rgb(238, 238, 238);
+	font-size: 18px;
+	font-weight: lighter;
+	margin-bottom: 25px;
+	text-align: justify;
+}
+
+.web-development-main>.main-title>button {
+	background: transparent;
+	color: white;
+	position: relative;
+	border: 0;
+	display: block;
+	width: 150px;
+	font-size: 20px;
+	font-weight: lighter;
+	text-align: left;
+	padding: 10px 15px;
+}
+
+/* .web-development-main>.main-title>button:hover {
+    background: rgba(255, 255, 255, 0.048);
+} */
+
+.web-development-main>.main-title>button::before {
+	content: "";
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 2px;
+	background: white;
+	border-radius: 1px;
+	transition: all 0.4s ease;
+}
+
+.web-development-main>.main-title>button:hover::before {
+	width: 115%;
+}
+
+@media screen and (min-width: 990px) {
+	.web-development-main>.main-title {
+		padding: 15px 5px;
+		width: 95%;
+		margin: 0 auto;
+		position: relative;
+		max-width: 750px;
+	}
+
+	.web-development-main>.main-title>h4 {
+		font-size: 45px;
+	}
+
+	.web-development-main>.main-title>p {
+		font-size: 25px;
+	}
+
+	.web-development-main>.main-title>button {
+		display: block;
+		width: 220px;
+		font-size: 25px;
+	}
+}

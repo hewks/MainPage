@@ -1,0 +1,4 @@
+User-agent: Googlebot
+Disallow: /BackSurface/
+
+Sitemap: https://www.hewks.net/sitemap.xml

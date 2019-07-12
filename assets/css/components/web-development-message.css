@@ -1,0 +1,44 @@
+/* 
+Creado por CtrlProgrammer
+Derechos de autor Hewks.net
+Copyright (C) Hewks.net
+web development message
+*/
+.modal-lg.choose-your-page {
+	max-width: 450px;
+}
+
+.page-choose-container {
+	background: #272727;
+}
+
+.page-choose-container>.modal-body {
+	max-width: 450px;
+	padding: 0 15px;
+}
+
+.page-choose-container>.modal-header {
+	padding: 6px 15px;
+	color: white;
+	border: 0;
+}
+
+.page-choose-container>.modal-header>button>span{
+	color: white;
+}
+
+.choose-page-title {
+	color: white;
+	font-size: 19px;
+	margin-bottom: 15px;
+	line-height: 19px;
+	display: block;
+}
+
+.choose-page-subtitle {
+	color: rgb(163, 163, 163);
+	font-size: 14px;
+	margin-bottom: 14px;
+	line-height: 14px;
+	display: block;
+}
